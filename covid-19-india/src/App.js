@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
-  return <div className="App"></div>;
+  useEffect(() => {
+    fetch("https://api.rootnet.in/covid19-in/stats/latest")
+      .then(res => res.json())
+      .then(data => {
+        setdailyStats(data);
+      });
+    return () => {};
+  }, []);
+  useEffect(() => {
+    fetch("https://api.rootnet.in/covid19-in/unofficial/covid19india.org")
+      .then(res => res.json())
+      .then(data => {
+        setunOfficial(data);
+      });
+    return () => {};
+  }, []);
+  const [dailyStats, setdailyStats] = useState({});
+  const [unOfficial, setunOfficial] = useState({});
+  return (
+    <div className="App">
+      <h1> Official :{dailyStats.data && dailyStats.data.summary.total}</h1>
+      <h1> Unofficial :{unOfficial.data && unOfficial.data.summary.total}</h1>
+      <h1>
+        {" "}
+        Discharged :{dailyStats.data && dailyStats.data.summary.discharged}
+      </h1>
+      <h1> Deaths :{dailyStats.data && dailyStats.data.summary.deaths}</h1>
+    </div>
+  );
 }
 
 export default App;

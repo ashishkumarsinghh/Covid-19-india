@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import SiteGrid from "./Grid";
 function App() {
   useEffect(() => {
     fetch("https://api.rootnet.in/covid19-in/stats/latest")
@@ -21,13 +21,18 @@ function App() {
   const [unOfficial, setunOfficial] = useState({});
   return (
     <div className="App">
-      <h1> Official :{dailyStats.data && dailyStats.data.summary.total}</h1>
+      {/* <h1> Official :{dailyStats.data && dailyStats.data.summary.total}</h1>
       <h1> Unofficial :{unOfficial.data && unOfficial.data.summary.total}</h1>
       <h1>
         {" "}
         Discharged :{dailyStats.data && dailyStats.data.summary.discharged}
       </h1>
-      <h1> Deaths :{dailyStats.data && dailyStats.data.summary.deaths}</h1>
+      <h1> Deaths :{dailyStats.data && dailyStats.data.summary.deaths}</h1> */}
+      <SiteGrid
+        deaths={dailyStats.data && dailyStats.data.summary.deaths}
+        recovered={dailyStats.data && dailyStats.data.summary.discharged}
+        cases={unOfficial.data && unOfficial.data.summary.total}
+      />
     </div>
   );
 }

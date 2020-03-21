@@ -31,7 +31,9 @@ function App() {
       <SiteGrid
         deaths={dailyStats.data && dailyStats.data.summary.deaths}
         recovered={dailyStats.data && dailyStats.data.summary.discharged}
+        official={dailyStats.data && dailyStats.data.summary.total}
         cases={unOfficial.data && unOfficial.data.summary.total}
+        details={unOfficial.data && unOfficial.data.rawPatientData}
       />
     </div>
   );

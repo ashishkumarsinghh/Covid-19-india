@@ -34,7 +34,7 @@ const SiteGrid = props => (
       </Grid.Column>
     </Grid.Row>
     <div className="ui divider"></div>
-    <Grid.Row columns={5}>
+    <Grid.Row columns={4}>
       {props.details &&
         props.details.map(item => (
           <Grid.Column>

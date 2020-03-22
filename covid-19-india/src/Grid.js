@@ -1,14 +1,11 @@
 import React from "react";
 import Patient from "./Patient";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, CardColumns } from "react-bootstrap";
 const Site = props => (
   <Container fluid>
-    <Row>
-      <Col>
-        <h1 className="masthead">Covid-19 - India</h1>
-        <Image src="covid.jpg" alt="logo" />
-      </Col>
-    </Row>
+    <h1 className="masthead">Covid-19 - India</h1>
+    <img src="covid.jpg" alt="logo" className="logo" />
+    <hr />
     <Row>
       <Col>
         <h3> Deaths</h3>
@@ -31,14 +28,13 @@ const Site = props => (
         </h5>
       </Col>
     </Row>
-    <Row>
+    <hr />
+    <CardColumns>
       {props.details &&
         props.details.map(item => (
-          <Col xs={6} md={4}>
-            <Patient details={item} />
-          </Col>
+          <Patient details={item} key={item.patientId} />
         ))}
-    </Row>
+    </CardColumns>
   </Container>
 );
 export default Site;

@@ -6,8 +6,15 @@
 }
 .masthead {
   padding-top: 2vh;
+  text-align: center;
 }
-.patientDetails {
+.patientDetail {
   box-sizing: border-box;
   border: solid gainsboro 1px;
+  margin-bottom: 1vh;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 8%;
 }

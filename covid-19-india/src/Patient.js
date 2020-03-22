@@ -20,6 +20,7 @@ export default function Patient(props) {
           </Card.Title>
           <Card.Text>
             Reported on {props.details && props.details.reportedOn}
+            <br />
             {props.details && props.details.city} ,
             {props.details && props.details.state}
           </Card.Text>

@@ -7,3 +7,7 @@
 .masthead {
   padding-top: 2vh;
 }
+.patientDetails {
+  box-sizing: border-box;
+  border: solid gainsboro 1px;
+}

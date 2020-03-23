@@ -33,7 +33,11 @@ function App() {
         recovered={dailyStats.data && dailyStats.data.summary.discharged}
         official={dailyStats.data && dailyStats.data.summary.total}
         cases={unOfficial.data && unOfficial.data.summary.total}
-        details={unOfficial.data && unOfficial.data.rawPatientData}
+        details={
+          unOfficial.data &&
+          unOfficial.data.rawPatientData.reverse() &&
+          unOfficial.data.rawPatientData
+        }
       />
     </div>
   );

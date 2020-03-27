@@ -10,7 +10,16 @@ function App() {
     return () => {};
   }, []);
 
+  useEffect(() => {
+    fetch("https://corona.lmao.ninja/v2/historical/india")
+      .then(res => res.json())
+      .then(data => {
+        setHistoricalData(data);
+      });
+    return () => {};
+  }, []);
   const [dailyStats, setdailyStats] = useState({});
+  const [historicalData, setHistoricalData] = useState({});
   return (
     <div className="App">
       <SiteGrid
@@ -18,6 +27,7 @@ function App() {
         recovered={dailyStats && dailyStats.recovered}
         cases={dailyStats && dailyStats.cases}
         today={dailyStats && dailyStats.todayCases}
+        timeline={historicalData && historicalData.timeline}
       />
     </div>
   );

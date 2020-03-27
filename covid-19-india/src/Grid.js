@@ -1,5 +1,7 @@
 import React from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
+import CoronaGraph from "./CoronaGraph";
 const Site = props => (
   <Container fluid>
     <h1 className="masthead">Covid-19 - India</h1>
@@ -28,6 +30,7 @@ const Site = props => (
       </Col>
     </Row>
     <hr />
+    <CoronaGraph timeline={props.timeline} />
   </Container>
 );
 export default Site;

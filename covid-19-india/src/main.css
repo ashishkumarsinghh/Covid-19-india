@@ -16,3 +16,7 @@
 .centertext {
   text-align: center;
 }
+.coronaGraph {
+  width: 100vh;
+  margin: 0 auto;
+}

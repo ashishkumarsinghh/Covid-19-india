@@ -1,6 +1,5 @@
 import React from "react";
-import Patient from "./Patient";
-import { Container, Row, Col, CardColumns } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 const Site = props => (
   <Container fluid>
     <h1 className="masthead">Covid-19 - India</h1>
@@ -17,7 +16,7 @@ const Site = props => (
       <Col className="centertext">
         <h3>Confirmed</h3>
         <h1>{props.cases}</h1>
-        <h5>Official : {props.official}</h5>
+        <h5>Today : {props.today}</h5>
       </Col>
 
       <Col className="centertext">
@@ -29,12 +28,6 @@ const Site = props => (
       </Col>
     </Row>
     <hr />
-    <CardColumns>
-      {props.details &&
-        props.details.map(item => (
-          <Patient details={item} key={item.patientId} />
-        ))}
-    </CardColumns>
   </Container>
 );
 export default Site;

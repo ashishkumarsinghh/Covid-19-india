@@ -29,6 +29,10 @@ function App() {
         today={dailyStats && dailyStats.todayCases}
         timeline={historicalData && historicalData.timeline}
       />
+      <div className="footer">
+        Designed and Developed by{" "}
+        <a href="https://github.com/ashishkumarsinghh">Ashish Kumar Singh.</a>
+      </div>
     </div>
   );
 }

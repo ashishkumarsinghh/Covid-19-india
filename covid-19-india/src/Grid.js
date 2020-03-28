@@ -47,7 +47,7 @@ const Site = props => (
         <h4>Total Cases: {props.world.cases}</h4>
         <h4 className="deaths">Deaths: {props.world.deaths}</h4>
         <h4 className="recovered">Recovered: {props.world.recovered}</h4>
-        <p>Updated at : {new Date(props.world.updated).toLocaleDateString()}</p>
+        <p>Updated at : {new Date(props.world.updated).toLocaleTimeString()}</p>
       </Col>
       <Col>&nbsp;</Col>
     </Row>

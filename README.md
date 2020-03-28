@@ -10,4 +10,4 @@ Covid-19-India stats and summary.
 
 # Deployed using Zeit now
 
-https://covid-19-india-njm2vw1fu.now.sh/
+https://covid-19-india.now.sh/

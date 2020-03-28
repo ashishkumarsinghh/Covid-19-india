@@ -6,7 +6,16 @@ Covid-19-India stats and summary.
 
 - React
 - create-react-app
-- SemanticUI
+- Bootstrap & React-Bootstrap
+- ChartJS
+
+# How to Run ?
+
+- git clone git@github.com:ashishkumarsinghh/Covid-19-india.git
+- cd Covid-19-india/covid-19-india
+- yarn
+- yarn start
+- Open Browser (localhost:3000)
 
 # Deployed using Zeit now
 

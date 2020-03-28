@@ -30,7 +30,27 @@ const Site = props => (
       </Col>
     </Row>
     <hr />
-    <CoronaGraph timeline={props.timeline} />
+    <Row>
+      <Col>&nbsp;</Col>
+      <Col sm={6}>
+        <h3 className="centertext">Corona Graph</h3>
+        <CoronaGraph timeline={props.timeline} />
+      </Col>
+      <Col>&nbsp;</Col>
+    </Row>
+    <hr />
+    <Row>
+      <Col>&nbsp;</Col>
+
+      <Col sm={6} className="worldstats centertext">
+        <h2>Covid-19 World Stats</h2>
+        <h4>Total Cases: {props.world.cases}</h4>
+        <h4 className="deaths">Deaths: {props.world.deaths}</h4>
+        <h4 className="recovered">Recovered: {props.world.recovered}</h4>
+        <p>Updated at : {new Date(props.world.updated).toLocaleDateString()}</p>
+      </Col>
+      <Col>&nbsp;</Col>
+    </Row>
   </Container>
 );
 export default Site;

@@ -14,11 +14,8 @@
   width: 8%;
 }
 .centertext {
+  margin-top: 4vh;
   text-align: center;
-}
-.coronaGraph {
-  width: 100vh;
-  margin: 0 auto;
 }
 
 .footer {

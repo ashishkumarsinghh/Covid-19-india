@@ -20,8 +20,8 @@ export default function CoronaGraph(props) {
               },
               {
                 label: "Deaths",
-                backgroundColor: "#ff6384",
-                borderColor: "#ff6384",
+                backgroundColor: "#e80923",
+                borderColor: "#e80923",
 
                 data: Object.values(props.timeline.deaths).map((k, v) => k),
                 fill: false

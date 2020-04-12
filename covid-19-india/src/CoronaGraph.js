@@ -2,7 +2,7 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 export default function CoronaGraph(props) {
   const options = {
-    responsive: true
+    responsive: true,
   };
   return (
     <div className="coronaGraph">
@@ -12,21 +12,21 @@ export default function CoronaGraph(props) {
             labels: Object.keys(props.timeline.cases),
             datasets: [
               {
-                label: "Total Cases",
+                label: "India",
                 data: Object.values(props.timeline.cases).map((k, v) => k),
                 backgroundColor: "#36a2eb",
                 borderColor: "#36a2eb",
-                fill: false
+                fill: false,
               },
               {
-                label: "Deaths",
-                backgroundColor: "#e80923",
-                borderColor: "#e80923",
+                label: "South Korea",
+                backgroundColor: "#e80213",
+                borderColor: "#e80933",
 
-                data: Object.values(props.timeline.deaths).map((k, v) => k),
-                fill: false
-              }
-            ]
+                data: Object.values(props.timelineKR.cases).map((k, v) => k),
+                fill: false,
+              },
+            ],
           }}
           options={options}
         />

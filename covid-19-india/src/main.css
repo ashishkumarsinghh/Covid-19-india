@@ -1,12 +1,30 @@
-.recovered {
-  color: rgb(43, 157, 11);
+.deathbox {
+  background-color: #f2293a;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
-.deaths {
-  color: #e80923;
+.recoverbox {
+  background-color: #03a64a;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.confirmbox {
+  background-color: black;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.currstatus {
+  padding-top: 5vh;
+  font-weight: 600;
+  padding-bottom: 5vh;
+  color: rgba(240, 240, 240, 0.7);
 }
 .masthead {
-  padding-top: 2vh;
+  padding-top: 5vh;
   text-align: center;
+  padding-bottom: 5vh;
+  font-weight: 900;
 }
 .logo {
   display: block;
@@ -22,4 +40,18 @@
   text-align: center;
   margin-top: 10vh;
   bottom: 0px;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+body {
+  background-color: #183540;
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.coronaGraph {
+  background-color: rgba(250, 250, 250, 0.9);
+  padding: 5vh 5vh;
+  box-sizing: border-box;
+  border: solid rgba(41, 41, 41, 0.8) 10px;
 }

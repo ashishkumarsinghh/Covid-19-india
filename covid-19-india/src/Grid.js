@@ -10,7 +10,7 @@ const Site = (props) => (
         <h3> Deaths</h3>
         <h1 className="deaths">{props.deaths}</h1>
         <h5 className="deaths">
-          Fatality Rate : {((props.deaths * 100) / props.cases).toFixed(2)}%
+          Fatality : {((props.deaths * 100) / props.cases).toFixed(2)}%
         </h5>
       </Col>
       <Col className="centertext confirmbox">
@@ -23,7 +23,7 @@ const Site = (props) => (
         <h3> Recovered</h3>
         <h1 className="recovered">{props.recovered}</h1>
         <h5 className="recovered">
-          Recovery Rate : {((props.recovered * 100) / props.cases).toFixed(2)}%
+          Recovery : {((props.recovered * 100) / props.cases).toFixed(2)}%
         </h5>
       </Col>
     </Row>
@@ -52,10 +52,8 @@ const Site = (props) => (
     <Row>
       <Col>
         <h4 className="centertext currstatus">
-          The world has {props.world.cases} people infected with Covid-19.
-        </h4>
-        <h4 className="centertext currstatus">
-          {" "}
+          The world has {props.world.cases} people infected with Covid-19.{" "}
+          <br />
           This deadly virus has taken lives of {props.world.deaths} people in
           the world.
         </h4>

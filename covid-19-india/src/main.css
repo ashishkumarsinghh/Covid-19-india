@@ -51,7 +51,7 @@ body {
 }
 .coronaGraph {
   background-color: rgba(250, 250, 250, 0.9);
-  padding: 5vh 5vh;
+  padding: 3vh 3vh;
   box-sizing: border-box;
-  border: solid rgba(41, 41, 41, 0.8) 10px;
+  box-shadow: rgba(41, 41, 41, 0.9) 10px 10px 10px;
 }

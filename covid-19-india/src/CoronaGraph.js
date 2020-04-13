@@ -14,14 +14,14 @@ export default function CoronaGraph(props) {
               {
                 label: "India",
                 data: Object.values(props.timeline.cases).map((k, v) => k),
-                backgroundColor: "#36a2eb",
-                borderColor: "#36a2eb",
+                backgroundColor: "#ffc800",
+                borderColor: "#ffc800",
                 fill: false,
               },
               {
                 label: "South Korea",
-                backgroundColor: "#e80213",
-                borderColor: "#e80933",
+                backgroundColor: "#000000",
+                borderColor: "#000000",
 
                 data: Object.values(props.timelineKR.cases).map((k, v) => k),
                 fill: false,

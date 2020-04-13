@@ -88,8 +88,12 @@ const Site = (props) => (
     <Row className="footerrow">
       <Col>
         <div className="footer">
-          Designed and Developed by{" "}
+          Developed by &nbsp;
           <a href="https://github.com/ashishkumarsinghh">Ashish Kumar Singh.</a>
+          . Font Suggested by{" "}
+          <a href="https://www.linkedin.com/in/pramodbhadana/">
+            Pramod Bhadana.
+          </a>
         </div>
       </Col>
     </Row>

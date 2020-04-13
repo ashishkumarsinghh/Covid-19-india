@@ -40,18 +40,19 @@
 .centertext {
   text-align: center;
 }
-
+.footerrow {
+  border-top: solid #ffc800 5px;
+}
 .footer {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 2vh;
   bottom: 0px;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-bottom: 2vh;
 }
 
 body {
   color: black;
-  font-family: "Noto Serif", serif;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 .coronaGraph {
   background-color: rgba(250, 250, 250, 0.9);

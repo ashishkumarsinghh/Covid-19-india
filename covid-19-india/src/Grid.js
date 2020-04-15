@@ -28,7 +28,9 @@ const Site = (props) => (
         </h3>
         <h1 className="deaths">{props.deaths}</h1>
         <h5 className="deaths">
-          Fatality : {((props.deaths * 100) / props.cases).toFixed(2)}%
+          Fatality :{" "}
+          {((props.deaths * 100) / (props.deaths + props.recovered)).toFixed(2)}
+          %
         </h5>
       </Col>
       <Col className="centertext confirmbox">
@@ -45,7 +47,11 @@ const Site = (props) => (
         </h3>
         <h1 className="recovered">{props.recovered}</h1>
         <h5 className="recovered">
-          Recovery : {((props.recovered * 100) / props.cases).toFixed(2)}%
+          Recovery :{" "}
+          {((props.recovered * 100) / (props.deaths + props.recovered)).toFixed(
+            2
+          )}
+          %
         </h5>
       </Col>
     </Row>

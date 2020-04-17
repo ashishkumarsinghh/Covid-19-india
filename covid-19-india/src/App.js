@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import SiteGrid from "./Grid";
 function App() {
   useEffect(() => {
-    fetch("https://corona.lmao.ninja/all")
+    fetch("https://corona.lmao.ninja/v2/all")
       .then((res) => res.json())
       .then((data) => {
         setWorldStats(data);
@@ -11,7 +11,7 @@ function App() {
     return () => {};
   }, []);
   useEffect(() => {
-    fetch("https://corona.lmao.ninja/countries/india")
+    fetch("https://corona.lmao.ninja/v2/countries/india")
       .then((res) => res.json())
       .then((data) => {
         setdailyStats(data);

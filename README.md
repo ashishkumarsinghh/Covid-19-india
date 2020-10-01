@@ -1,6 +1,6 @@
 # Covid-19-india
 
-Covid-19-India stats and summary.
+Covid-19-India stats and summary - An Epitome of Great Project
 
 # Tech Stack
 
